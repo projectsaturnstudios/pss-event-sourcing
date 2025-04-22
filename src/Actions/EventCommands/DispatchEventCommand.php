@@ -1,6 +1,6 @@
 <?php
 
-namespace ProjectSaturnStudios\EventSourcing\Actions;
+namespace ProjectSaturnStudios\EventSourcing\Actions\EventCommands;
 
 use Lorisleiva\Actions\Concerns\AsAction;
 use Spatie\EventSourcing\Commands\CommandBus;

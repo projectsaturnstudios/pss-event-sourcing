@@ -1,6 +1,6 @@
 <?php
 
-namespace ProjectSaturnStudios\EventSourcing\Middleware;
+namespace ProjectSaturnStudios\EventSourcing\Http\Middleware;
 
 use Closure;
 use PDOException;

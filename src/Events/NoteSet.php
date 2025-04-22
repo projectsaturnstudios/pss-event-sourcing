@@ -3,20 +3,20 @@
 namespace ProjectSaturnStudios\EventSourcing\Events;
 
 use Illuminate\Broadcasting\Channel;
-use Illuminate\Queue\SerializesModels;
-use Spatie\LaravelData\Concerns\BaseData;
-use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
-use Spatie\LaravelData\Concerns\TransformableData;
+use Illuminate\Foundation\Events\Dispatchable;
+use Illuminate\Queue\SerializesModels;
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
-use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
-use Spatie\LaravelData\Contracts\BaseData as BaseDataContract;
-use Spatie\LaravelData\Contracts\TransformableData as TransformableDataContract;
 
-abstract class DataEvent extends ShouldBeStored implements BaseDataContract, TransformableDataContract//, ShouldBroadcast
+class NoteSet extends ShouldBeStored //implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
-    use BaseData, TransformableData;
+
+    public function __construct(public string $note)
+
+    {
+
+    }
 
     /**
      * Get the channels the event should broadcast on.

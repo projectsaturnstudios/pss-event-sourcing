@@ -2,7 +2,7 @@
 	"name": "projectsaturnstudios/pss-event-sourcing",
 	"description": "Spatie Event Sourcing using Spatie Laravel-Data Objects!",
 	"type": "library",
-	"version": "1.0",
+	"version": "1.1.0",
 	"license": "proprietary",
 	"require": {
         "php": "^8.2",
