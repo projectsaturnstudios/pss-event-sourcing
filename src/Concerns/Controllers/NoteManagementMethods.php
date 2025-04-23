@@ -40,7 +40,7 @@ trait NoteManagementMethods
 
             user_activity('admin-user-log')
                 ->event('note-left')
-                ->performedOn($recipient = AdminProjection::whereAdminUuid($uuid)->first())
+                ->performedOn($recipient = $this->perform_projection::where($this->uuid_key, '=', $uuid)->first())
                 ->causedBy($causer = request()->user())
                 ->withProperties([
                     'title' => 'Note created',
