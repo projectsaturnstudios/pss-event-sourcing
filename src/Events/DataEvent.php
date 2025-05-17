@@ -9,7 +9,6 @@ use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Spatie\LaravelData\Concerns\TransformableData;
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
-use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Spatie\LaravelData\Contracts\BaseData as BaseDataContract;
 use Spatie\LaravelData\Contracts\TransformableData as TransformableDataContract;
 

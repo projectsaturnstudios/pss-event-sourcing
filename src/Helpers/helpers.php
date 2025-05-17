@@ -1,8 +1,8 @@
 <?php
 
 use ProjectSaturnStudios\EventSourcing\EventCommands\EventCommand;
-use ProjectSaturnStudios\EventSourcing\Http\Middleware\RetryPersistMiddleware;
-use ProjectSaturnStudios\EventSourcing\Actions\EventCommands\DispatchEventCommand;
+use ProjectSaturnStudios\EventSourcing\Actions\DispatchEventCommand;
+use ProjectSaturnStudios\EventSourcing\Middleware\RetryPersistMiddleware;
 
 if(!function_exists('app_queue'))
 {

@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
      * These directories will be scanned for projectors and reactors. They
      * will be registered to Projectionist automatically.
@@ -39,14 +38,12 @@ return [
      * the right order. Here you can set of the name of the queue.
      */
     'queue' => env('EVENT_PROJECTOR_QUEUE_NAME', null),
-
     /*
      * When a Projector or Reactor throws an exception the event Projectionist can catch it
      * so all other projectors and reactors can still do their work. The exception will
      * be passed to the `handleException` method on that Projector or Reactor.
      */
     'catch_exceptions' => env('EVENT_PROJECTOR_CATCH_EXCEPTIONS', false),
-
     /*
      * This class is responsible for storing events in the EloquentStoredEventRepository.
      * To add extra behaviour you can change this to a class of your own. It should
@@ -95,7 +92,6 @@ return [
      * of your events but still handle older events correctly.
      */
     'event_class_map' => [],
-
     /*
      * This class is responsible for serializing events. By default an event will be serialized
      * and stored as json. You can customize the class name. A valid serializer
