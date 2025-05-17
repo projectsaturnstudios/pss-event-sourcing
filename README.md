@@ -1,7 +1,7 @@
 # Project Saturn Studios - Laravel ES Utilities 🚀
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/projectsaturnstudios/laravel-es-utilities.svg?style=flat-square)](https://packagist.org/packages/projectsaturnstudios/laravel-es-utilities)
-[![Total Downloads](https://img.shields.io/packagist/dt/projectsaturnstudios/laravel-es-utilities.svg?style=flat-square)](https://packagist.org/packages/projectsaturnstudios/laravel-es-utilities)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/projectsaturnstudios/pss-event-sourcing.svg?style=flat-square)](https://packagist.org/packages/projectsaturnstudios/pss-event-sourcing)
+[![Total Downloads](https://img.shields.io/packagist/dt/projectsaturnstudios/pss-event-sourcing.svg?style=flat-square)](https://packagist.org/packages/projectsaturnstudios/laravel-es-utilities)
 <!-- Add other badges here: e.g., Build Status, Code Coverage, License -->
 
 Supercharge your Spatie Event Sourcing with the elegance of Spatie's Laravel-Data objects and the power of Loris Leiva's Laravel Actions. This package is all about making event sourcing in Laravel a smoother, more typed, and downright enjoyable ride.
