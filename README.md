@@ -6,23 +6,23 @@
 
 Supercharge your Spatie Event Sourcing with the elegance of Spatie's Laravel-Data objects and the power of Loris Leiva's Laravel Actions. This package is all about making event sourcing in Laravel a smoother, more typed, and downright enjoyable ride.
 
-## 📜 Table of Contents
+# 📜 Table of Contents
 
-- [Why This Package? (The "Why Bother?" Section)](#why-this-package-the-why-bother-section)
-- [Core Awesomeness (Features List)](#core-awesomeness-features-list)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [How to Rock It (Usage Guide)](#how-to-rock-it-usage-guide)
-- [Testing Your Masterpiece](#testing-your-masterpiece)
-- [Advanced Scenarios / Cookbook](#advanced-scenarios--cookbook)
-- [Contributing](#contributing)
-- [Support & Contact](#support--contact)
-- [License](#license)
-- [Credits & Thanks](#credits--thanks)
-- [README Change Log](#readme-change-log)
+- [🤔 Why This Package?](#-why-this-package)
+- [✨ Features List](#-features-list)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [How to Rock It (Usage Guide)](#-how-to-rock-it-usage-guide)
+- [Testing Your Masterpiece](#-testing-your-masterpiece)
+- [Advanced Scenarios / Cookbook](#-advanced-scenarios--cookbook)
+- [Contributing](#-contributing)
+- [Support & Contact](#-support--contact)
+- [License](#-license)
+- [Credits & Thanks](#-credits--thanks)
+- [README Change Log](#-readme-change-log)
 
 
-## 🤔 Why This Package? (The "Why Bother?" Section)
+# 🤔 Why This Package?
 
 Event sourcing is a powerful pattern, and Spatie's `laravel-event-sourcing` package provides a rock-solid foundation for it in Laravel. So, why add another layer with `laravel-es-utilities`? Glad you asked, partner. This package is all about taking that solid foundation and making your developer experience (DX) even smoother, more robust, and, dare we say, more enjoyable.
 
@@ -48,7 +48,7 @@ Here's the lowdown on what this package brings to your shindig:
 
 In short, if you love `spatie/laravel-event-sourcing` but wished for tighter integration with typed data objects and a more structured approach to commands, `laravel-es-utilities` is here to be your new best friend.
 
-## ✨ Core Awesomeness (Features List)
+## ✨ Features List
 
 This package is packed with goodies to make your event sourcing journey in Laravel smoother. Here are the highlights:
 
