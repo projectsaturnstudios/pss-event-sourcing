@@ -1,21 +1,21 @@
 {
-    "name": "projectsaturnstudios/laravel-es-utilities",
-    "description": "Spatie Event Sourcing using Spatie Laravel-Data Objects!",
-    "type": "library",
-    "version": "1.1.4",
-    "license": "MIT",
-    "require": {
+	"name": "projectsaturnstudios/pss-event-sourcing",
+	"description": "Spatie Event Sourcing using Spatie Laravel-Data Objects!",
+	"type": "library",
+	"version": "1.1.5",
+	"license": "proprietary",
+	"require": {
         "php": "^8.2",
         "ext-pdo": "*",
-        "ramsey/uuid": "^4.7",
         "spatie/laravel-data": "^4.11",
         "lorisleiva/laravel-actions": "^2.6",
-        "spatie/laravel-event-sourcing": "^7.3"
+        "spatie/laravel-event-sourcing": "^7.3",
+        "ramsey/uuid": "^4.7"
     },
-    "autoload": {
-        "psr-4": {
-            "ProjectSaturnStudios\\EventSourcing\\": "src"
-        },
+	"autoload": {
+		"psr-4": {
+			"ProjectSaturnStudios\\EventSourcing\\": "src"
+		},
         "files": [
             "src/Helpers/helpers.php"
         ]
@@ -25,7 +25,7 @@
             "ProjectSaturnStudios\\EventSourcing\\Tests\\": "tests"
         }
     },
-    "minimum-stability": "stable",
+	"minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [

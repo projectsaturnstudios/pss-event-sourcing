@@ -2,17 +2,37 @@
 
 namespace ProjectSaturnStudios\EventSourcing\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use Carbon\Laravel\ServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class PSSEventSourcingServiceProvider extends ServiceProvider
+class PSSEventSourcingServiceProvider extends PackageServiceProvider
 {
-    public function register() : void
+    protected array $merge_configs = [
+        'event-sourcing' => '/../config/event-sourcing.php',
+    ];
+
+    public function configurePackage(Package $package): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../../config/event-sourcing.php', 'event-sourcing');
+        $package
+            ->name('pss-event-sourcing')
+            ;
     }
 
-    public function boot() : void
+    public function packageRegistered(): void
     {
 
+    }
+
+    public function packageBooted(): void
+    {
+        $this->mergeConfigs();
+    }
+
+    public function mergeConfigs(): void
+    {
+        foreach ($this->merge_configs as $key => $config_path) {
+            $this->mergeConfigFrom($this->package->basePath($config_path), $key);
+        }
     }
 }

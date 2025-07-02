@@ -38,7 +38,7 @@ trait NoteManagementMethods
                     'created_at' => now()->toDateTimeString()
                 ])->persist();
 
-            user_activity('admin-user-log')
+            /*user_activity('admin-user-log')
                 ->event('note-left')
                 ->performedOn($recipient = $this->perform_projection::where($this->uuid_key, '=', $uuid)->first())
                 ->causedBy($causer = request()->user())
@@ -49,6 +49,7 @@ trait NoteManagementMethods
                     'date' => now()->timestamp,
                 ])
                 ->log('A note was created');
+            */
 
             $results = [
                 'success' => true,
